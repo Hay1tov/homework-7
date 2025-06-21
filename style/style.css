@@ -281,7 +281,7 @@
   align-items: center;
 }
 
-.membership_journey {
+.membership {
   display: flex;
   gap: 200px;
   padding-top: 150px;
@@ -411,6 +411,7 @@
   gap: 40px;
   justify-content: space-between;
   padding-top: 80px;
+  padding-bottom: 100px;
 }
 
 .sector {
@@ -421,6 +422,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: 200ms;
+}
+
+.sector:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.sector:active {
+  transform: scale(0.98);
 }
 
 .sector_img1 {
@@ -501,35 +511,40 @@
   padding-top: 100px;
 }
 
-.regularly1 p {
+.regular1 p {
   text-transform: capitalize;
   color: red;
   font-size: 15px;
   padding-bottom: 5px;
 }
 
-.regularly2 h2 {
+.regular2 h2 {
   font-size: 35px;
   letter-spacing: 1px;
   padding-bottom: 20px;
 }
 
-.regularly3 p {
+.regular3 p {
   color: rgb(116, 116, 116);
 }
 
-.all_btn button {
+.browse-btn button {
   padding: 10px 30px;
   border: none;
   border-radius: 3px;
-  background-color: salmon;
+  background-color: rgb(236, 126, 113);
   color: white;
   font-size: 14px;
   text-transform: capitalize;
+  transition: 0.5s;
 }
 
-.all_btn {
+.browse-btn {
   align-self: flex-end;
+}
+
+.browse-btn:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .beginners {
@@ -753,7 +768,7 @@ button {
 
 .skills1 {
   flex: 1;
-  background-color: salmon;
+  background-color: rgb(236, 126, 113);
   padding: 60px;
 }
 
@@ -841,7 +856,7 @@ button {
 
 .input_sub button {
   border: none;
-  background-color: salmon;
+  background-color: rgb(236, 126, 113);
   border-radius: 5px;
   padding: 5px 8px;
   position: relative;
